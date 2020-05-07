@@ -111,6 +111,7 @@ def user_stats(df):
             earliest=df['Birth Year'].min(axis=0,skipna=True)
             recent=df['Birth Year'].max(axis=0,skipna=True)
             common=df['Birth Year'].mode()[0]
+            # output can be improved on to make things clearer
             print('user type count:{}, gender count:{} '.format(user_types,gender_count))
             print('Earliest birth year:{}, most recent birth year:{}, most common birthdates:{}'.format(earliest,recent,common))
             break
