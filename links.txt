@@ -1,0 +1,5 @@
+https://knowledge.udacity.com/?nanodegree=nd104&page=1&project=328&rubric=1379
+
+https://stackoverflow.com/
+
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.dt.hour.html
