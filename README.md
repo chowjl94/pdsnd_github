@@ -3,11 +3,11 @@ Date created: 7th May 2020
               (7/5/2020)
 
 ### Project: Bikehshare data
-The project, makses use of python to explore data of bikesharing in 3 cities of USA. Chicago , New York City , Washington.
+The project, makses use of python to explore data of bikesharing in 3 cities of USA. __Chicago__ , **New York City** , **Washington**.
 
 
 ### Description
-This project aims to compare the usage of bikesharing in 3 cities of Chicago, New York City, and Washington. By computing the following
+This project aims to compare the usage of bikesharing in 3 cities of Chicago, New York City, and Washington. By computing the following:
 
 Popular times of travel
 * most common month
