@@ -19,8 +19,7 @@ def get_filters():
     day='all'
     if response == 'month':
         while True:
-            print("Which month to filter by? Input month of January till June???")
-            month = input().lower()
+            month = input("Which month to filter by? Input month of January till June???").lower()
             months = ['january','february','march','april','may','june']
             if month in months:
                 print('Filtering by {},{}'.format(city,month))
