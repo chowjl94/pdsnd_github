@@ -7,21 +7,19 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 def get_filters():
-    print("Hello! Let\'s explore some US bikeshare data!")
+    print("Hello! Let's explore some US bikeshare data!")
     while True:
         city = input("Which city would you like to see the data for? ").lower()
         if city in ('new york city', 'washington', 'chicago'):
             break
         else:
             print("Invalid Input")
-    print("Would you like to filter the data by month, day or none?")
-    response = input().lower()
+    response= input("Would you like to filter the data by month, day or none?").lower()
     month='all'
     day='all'
     if response == 'month':
         while True:
-            print("Which month to filter by? Input month of January till June???")
-            month = input().lower()
+            month = input("Which month to filter by? Input month of January till June???").lower()
             months = ['january','february','march','april','may','june']
             if month in months:
                 print('Filtering by {},{}'.format(city,month))
@@ -75,9 +73,7 @@ def station_stats(df):
     me_station=df["End Station"].mode()[0]
     df['comb_station'] = df['Start Station'] + df['Start Station']
     comb_station=df['comb_station'].mode()[0]
-    print('most common start station is {}'.format(m_station))
-    print('most common end station is {}'.format(me_station))
-    print("most common combination is {}".format(comb_station))
+    print('most common start,end,combination station is {},{},{}'.format(m_station,me_station,comb_station))
     print("This took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
