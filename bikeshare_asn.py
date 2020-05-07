@@ -14,8 +14,7 @@ def get_filters():
             break
         else:
             print("Invalid Input")
-    print("Would you like to filter the data by month, day or none?")
-    response = input().lower()
+    response = input("Would you like to filter the data by month, day or none?").lower()
     month='all'
     day='all'
     if response == 'month':
